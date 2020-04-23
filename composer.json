@@ -1,0 +1,42 @@
+{
+    "name": "plug2team/plug2-azure-blob-storage",
+    "description": "Package to use Microsoft Azure Blob Storage with Laravel Storage API",
+    "type": "library",
+    "keywords": [
+        "azure",
+        "blob",
+        "storage",
+        "laravel"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "harbsprog",
+            "email": "harbsprog@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Plug2Team\\Plug2AzureBlobStorage\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Plug2Team\\Plug2AzureBlobStorage\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Plug2Team\\Plug2AzureBlobStorage\\AzureBlobStorageServiceProvider"
+            ]
+        }
+    },
+    "require": {
+        "league/flysystem-azure-blob-storage": "^0.1.6"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^3.8",
+        "phpunit/phpunit": "^7.5"
+    }
+}
